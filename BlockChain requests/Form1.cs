@@ -40,6 +40,7 @@ namespace BlockChain_requests
 
         private void button1_Click(object sender, EventArgs e)
         {
+            textBox6.Text = "Performing request...";
             dynamic main = new JObject();
             main.jsonrpc = "2.0";
             main.method = comboBox1.Text.ToLower();
